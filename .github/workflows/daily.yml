@@ -23,7 +23,7 @@ jobs:
         # 404.html allows every path to be served by the index.html
 
       - name: upload-page
-        uses: actions/upload-pages-artifact # add @ to specify a version
+        uses: actions/upload-pages-artifact@v4
         with:
           path: www/
 
@@ -39,4 +39,4 @@ jobs:
     steps:
       - name: deploy-to-github-pages
         id: deployment
-        uses: actions/deploy-pages # add @ to specify a version
+        uses: actions/deploy-pages@v5
