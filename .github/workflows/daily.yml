@@ -14,7 +14,7 @@ jobs:
       - name: prepare-page
         env:
           FEEDS: |
-            https://rss.golem.de/rss.php?feed=OPML
+            https://rss.golem.de/rss.php?feed=RSS2.0
         run: |
           wget -q -O tinyfeed https://github.com/TheBigRoomXXL/tinyfeed/releases/latest/download/tinyfeed_linux_arm64
           chmod +x tinyfeed
