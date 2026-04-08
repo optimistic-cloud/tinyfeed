@@ -1,11 +1,8 @@
 name: update-demo-daily
 on:
-  schedule:
-    - cron: "0 6 * * *" # every day at 6am
   workflow_dispatch:
-  push:
-    tags:
-      - "refresh-github-page" # to manually trigger a refresh
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
   build:
